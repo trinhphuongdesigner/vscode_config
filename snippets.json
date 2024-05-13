@@ -1,0 +1,118 @@
+{
+	"console log": {
+		"prefix": "zz",
+		"body": [
+			"console.log('««««« $0 »»»»»', $0);",
+		],
+		"description": "clog"
+	},
+	"text log": {
+		"prefix": "xx",
+		"body": [
+			"console.log('««««« $0 »»»»»');",
+		],
+		"description": "tlog"
+	},
+	"debb": {
+		"prefix": "debb",
+		"body": [
+			"// eslint-disable-next-line no-debugger",
+			"debugger;",
+		],
+		"description": "deb"
+	},
+	"useMemo": {
+		"prefix": "umm",
+		"body": [
+			"const $0 = useMemo(() => {",
+
+			"return;",
+			"}, []);",
+		],
+		"description": "useMemo"
+	},
+	"useCallback": {
+		"prefix": "ucb",
+		"body": [
+			"const $0 = useCallback(() => {",
+
+			"}, []);",
+		],
+		"description": "useCallback"
+	},
+	"useEffect": {
+		"prefix": "uef",
+		"body": [
+			"useEffect(() => {",
+			"$0",
+			"}, []);",
+		],
+		"description": "useEffect"
+	},
+	"Cleanup func": {
+		"prefix": "cuf",
+		"body": [
+			"useEffect(() => {",
+				"return () => {",
+						"$0",
+				"}",
+		"}, [input])",
+		],
+		"description": "Cleanup func"
+	},
+	"IFFE": {
+		"prefix": "iffy",
+		"body": [
+			"(function () {}) ();",
+
+			"(function () {} ());",
+
+			"(() => {}) ();",
+		],
+		"description": "iffy func"
+	},
+	"PropTypes": {
+		"prefix": "ptm",
+		"body": [
+			"import PropTypes from 'prop-types';",
+
+			"$0.propTypes = {",
+
+			"};",
+			
+			"$0.defaultProps = {",
+
+			"};",
+		],
+		"description": "Cleanup func"
+	},
+	"check": {
+		"prefix": "check",
+		"body": [
+			"console.log('███╗░░██╗░█████╗░███╗░░██╗');",
+			"console.log('████╗░██║██╔══██╗████╗░██║');",
+			"console.log('██╔██╗██║██║░░██║██╔██╗██║');",
+			"console.log('██║╚████║██║░░██║██║╚████║');",
+			"console.log('██║░╚███║╚█████╔╝██║░╚███║');",
+			"console.log('╚═╝░░╚══╝░╚════╝░╚═╝░░╚══');",
+		],
+		"description": "clog"
+	},
+	"ccp": {
+		"prefix": "ccp",
+		"body": [
+			"import React from 'react';",
+			"",
+			"function $0(props) {",
+			"\treturn (",
+			"\t\t<div>",
+			"\t\t\tComponent",
+			"\t\t</div>",
+			"\t);",
+			"}",
+			"",
+			"export default $0;",
+		],
+		"description": "Create function component"
+	}
+}
